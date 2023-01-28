@@ -27,6 +27,7 @@ teardown() {
   # Do something here to verify functioning extra service
   # For extra credit, use a real CMS with actual config.
   # ddev exec "curl -s elasticsearch:9200" | grep "${PROJNAME}-elasticsearch"
+  ddev exec command -v google-chrome-stable
 }
 
 @test "install from release" {
@@ -37,4 +38,5 @@ teardown() {
   ddev restart >/dev/null
   # Do something useful here that verifies the add-on
   # ddev exec "curl -s elasticsearch:9200" | grep "${PROJNAME}-elasticsearch"
+  ddev exec command -v google-chrome-stable
 }
