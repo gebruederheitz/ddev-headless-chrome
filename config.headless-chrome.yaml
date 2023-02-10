@@ -2,3 +2,4 @@
 web_extra_daemons:
 - name: "headless-chrome"
   command: /usr/bin/google-chrome-stable --disable-gpu --headless --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222 --no-sandbox --window-size="1920,1080" --disable-dev-shm-usage --no-startup-window --no-first-run --no-pings
+  directory: /var/www/html
